@@ -1,0 +1,27 @@
+#transactions-list {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+h4#list-id {
+    margin-bottom: 0;
+}
+ul#transactions {
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    flex-grow: 1;
+}
+ul#transactions>li {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    box-shadow: 0 0 3px #cac8c8;
+}
+
+h3.transaction-name {
+    margin-top: 0;
+}

@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import userLogo from '../assets/img/user-logo.png';
 import './index.css';
 
-const currencySymbol = { 'GBP': '£', 'USD': '$', 'EUR': '€' };
 
 const SideElement = ({ name, children }) => {
     return (
@@ -31,17 +30,16 @@ const MenuList = ({ active }) => {
     );
 }
 
-const SideMenu = () => {
-    const symbol = currencySymbol['GBP'];
+const SideMenu = ({ provider, balance, symbol }) => {
     return (
         <div id="side-menu-container">
             <SideElement name='user-info'>
                 <img src={userLogo} alt="" />
-                <span id="username">Ernesto</span>
+                <span id="username">{provider.title}</span>
             </SideElement>
             <SideElement name='balance' >
                 <h5>Account balance</h5>
-                <p>{`${symbol}${'2900'}`}</p>
+                <p>{`${symbol[balance.currency_iso]}${balance.amount}`}</p>
             </SideElement>
             <SideElement name='menu-list'>
                 <MenuList active='transactions' />
