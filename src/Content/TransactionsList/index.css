@@ -12,6 +12,7 @@ ul#transactions {
     list-style: none;
     height: 100%;
     flex-grow: 1;
+    overflow: auto;
 }
 ul#transactions>li {
     height: 70px;
