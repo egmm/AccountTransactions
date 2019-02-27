@@ -19,7 +19,6 @@ class App extends Component {
       .then(response => response.json())
       .catch(error => console.error("Error:", error))
       .then(response => {
-        console.log(response);
         this.setState({ data: response });
       });
   }
