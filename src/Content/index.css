@@ -8,3 +8,6 @@
     -webkit-flex-direction: column;
     flex-direction: column;
 }
+.content-container h1 {
+    color: #1D6C32;;
+}

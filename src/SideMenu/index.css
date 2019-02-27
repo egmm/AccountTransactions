@@ -1,15 +1,15 @@
 #side-menu-container {
     height: 100%;
     position: relative;
-    background: #00eeaa;
     padding: 1em;
     flex: 0 0 15%;
+    box-shadow: 1px 6px 10px #cac8c8;
 }
 .menu-element {
     min-height: 15%;
     display: flex;
     padding: 1em 0;
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px #40EC6D;
 }
 #user-info>img {
     width: 40px;
@@ -27,7 +27,7 @@
     margin-top: 0;
 }
 #menu-list {
-    height: 50%;
+    height: 58%;
     border: none;
     padding: 0;
 }
@@ -36,5 +36,5 @@
     padding: 1em 0;
 }
 .active {
-    color: #fff;
+    color: #1D6C32;
 }

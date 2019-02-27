@@ -6,9 +6,9 @@ const Transaction = ({ category, date, name, value, currency }) => {
         <React.Fragment>
             <span className='category'>{category}</span>
             <span className='transaction-description'>
-                <h3 className='transaction-name'>
+                <h4 className='transaction-name'>
                     {name}
-                </h3>
+                </h4>
                 <span className='transaction-date'>
                     {date}
                 </span>

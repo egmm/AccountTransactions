@@ -3,6 +3,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    color: #484747;
 }
 h4#list-id {
     margin-bottom: 0;
@@ -14,15 +15,27 @@ ul#transactions {
     flex-grow: 1;
     overflow: auto;
 }
+
+#transactions span {
+    flex: 0 0 30%;
+}
+#transactions span.value {
+    text-align: right;
+}
 ul#transactions>li {
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5em;
-    box-shadow: 0 0 3px #cac8c8;
+    box-shadow: 0 0 1px #cac8c8;
 }
 
-h3.transaction-name {
+h4.transaction-name {
     margin-top: 0;
+    margin-bottom: 1em;
+    color: #484747;
+}
+span.transaction-date {
+    font-size: 0.9em;
 }
